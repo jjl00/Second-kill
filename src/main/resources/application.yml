@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/ssm-seconds-kill?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8
+    driver-class-name: com.mysql.jdbc.Driver
+    username: #.....
+    password: #.....
+  redis:
+    host: #.....
+    port: #.....
+
+
+server:
+  port: 8086
+
+#redis自定义键值
+redis:
+  prefix:
+    requestNo: "rn:"
+    stockCount: sum-
+    stockSold: sold-
+
+kafka:
+  #是否开启kafka
+  switch: true
+  #kafka主题
+  topic: order
+
+
+
